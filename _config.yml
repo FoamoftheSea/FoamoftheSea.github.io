@@ -1,11 +1,11 @@
 # Site settings
-author: Nathaniel Cibik
-title: 
+author: Stephen Cibik
+title: A Journey Through Data Science
 header-img: img/home-bg.png
 email: indezera@gmail.com
-copyright_name: Nathaniel Cibik
+copyright_name: Stephen Cibik
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Learn like a Machine
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  FoamoftheSea
