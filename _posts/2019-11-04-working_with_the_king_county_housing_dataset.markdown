@@ -1,0 +1,30 @@
+---
+layout: post
+title:      "Working with the King County Housing dataset"
+date:       2019-11-04 20:08:13 +0000
+permalink:  working_with_the_king_county_housing_dataset
+---
+
+(the technical workflow described in this post can be seen in the studentFINAL.ipynb file in the repository located here: https://github.com/FoamoftheSea/dsc-v2-mod1-final-project-online-ds-sp-000/blob/master/studentFINAL.ipynb)
+
+For the first project in my data science studies, I was set to work on the King County Housing dataset to make observations that would be relevant to business interests. The data was cleaned, then multiple approaches to transforming the data were tested in order to find the methods which would best serve the accuracy of the linear model. The results of my exploratory data analysis showed that both the grade and renovation status of a house were strong predictors of higher sales price, and this could be used by a home renovation company to sell their services. 
+
+## Process:
+
+The dataset first needed to be cleaned and adjusted. Naturally, the first thing to do was call up the familiar pandas methods to see the info and descriptions of the columns in the .csv file. In doing so, I was able to see that dealing with missing values would be my first task. The afflicted columns were 'sqft_basement',' waterfront', 'yr_renovated', and 'view'. 
+
+The 'sqft_basement' column had been hidden initially from df.describe() because of its object datatype, which was undoubtedly related to the use of '?' to mark the unknown values of the feature. First, I turned these '?'s into '99999', then recast the column as a float64 datatype. It turned out that for all of the houses where values were recorded for all three of 'sqft_living', 'sqft_above', and 'sqft_basement', the last turned out to be a clean difference between the first two, meaning that some of the missing values in the column could be recovered by creating a new column which was the result of subtracting 'sqft_above' from 'sqft_living' to find what square footage was left to be below the ground (in the basement). Since most houses did not have basements, I decided it would be best to turn this into a binary variable 'has_basement' which simply showed whether or not a house had a basement, then I dropped the 'sqft_basement' column. 
+
+For 'waterfront', 'yr_renovated', and 'view', all missing values were replaced by zeroes according to the same logic: that a missing value in any of these features was probably representative of the house lacking the quality described in the feature, which in all cases should have been recorded as a zero.
+
+The 'yr_renovated' column was mostly zeroes, with a large jump numerically to the first years of renovation, so I decided it would be best to turn this into a categorical variable. Rather than just have it as a binary feature describing the presence of any renovation, I was curious to see how the currency of the renovations affected their impact on price, so I divided the feature into bins with relatively equal populations, and made it into dummy variables. This was useful later in showing that more recent renovations tended toward larger increases in sale price. 
+
+Once the data was cleaned and prepared, I used a forward-backward selection function based on p-values to select variables for the linear model. The target variable was log-transformed, resulting in appreciably greater model accuracy. A loop was written to attempt to optimize transformations on the independent variables by going through and applying a log and square root transformation to each one to determine if the effect would be beneficial to the adjusted R squared of the model, and keep a dataframe of features that worked best together. Though this did improve the model accuracy somewhat, it was negligible, and I decided that the step was not worthwhile as it would complicate the coefficient comparisons later. The independent variables were standardized in order to make this comparison effective. 
+
+## Conclusions:
+
+Ultimately, an adjusted R squared of .775 was reached, and the coefficients of the variables were compared to make observations about which features had the greatest impact on sale price. Waterfront property was the most powerful predictor, which was not surprising. The second largest coefficient was 'lat', which is also unsurprising when you look at a map of King County and see that all of the water is on one side, along with the city of Seattle. Since both of these variables were based on the location of a house, which is fixed and not under the control of the seller, they were not useful in determining a business solution to raising the value of a home.
+
+The next four most powerful variables were 'grade' and all of the most recent renovation dummy variables. This was where I was able to come up with business related ideas. More recent renovations meant higher sales prices, so a homeowner could be inspired knowing that if they renovated their house now, it would be quite recent, and likely have a very positive effect on their home value. After finding a report published by the King County Department of Assessments which contained an outline of the qualities considered in the grading system used by the county, I could see that targeted renovations on a home could definitely raise its grade, since things like kitchen/bathroom fittings and quality finishing work were favorable in assessments, and therefore be expected to raise the sale price appreciably.
+
+Using this research, a home renovation company could persuade homeowners to invest in their services in order to get a return on investment when they go to sell their home, and perhaps a slightly higher standard of living in between. The intersection between the data showing a strong correlation between grade/renovations and sales price, and the report by the county describing that more upgraded features tended to raise the grade given to houses offers a strong argument to convince a homeowner to do some cost-effective updating of their home. It is this argument that I used in my non-technical business presentation. 
