@@ -1,11 +1,11 @@
 ---
 layout: post
 title:      "Finding my way to Data Science"
-date:       2019-09-18 23:32:00 +0000
+date:       2019-09-18 19:32:00 -0400
 permalink:  finding_my_way_to_data_science
 ---
 
-![](https://imgur.com/EUhpq9U)
+<center>![Data Map](https://imgur.com/EUhpq9U)</center>
 
 I have had many passions throughout my life, spread out over the sciences and the arts.  From early on I excelled in mathematics and found it intuitive, but despite my enjoyment I never really saw a future for myself in pure math.  I developed a love for physics in high school because I saw it as the connection between math and nature, and was interested in how it expanded our consciousness of reality and the cosmos.  Later through my years in community college I found myself in a wide variety of science classes.  I loved them all, from anthropology, to geology, to psychology, as well as physics, astronomy, chemistry, and biology.  I enjoy the empirical approach of science to understanding the universe around us, using observations to establish patterns which could lead to a better understanding of the mystery called life, collected and analyzed with amazing synergy using the principles of mathematics.  Though I fancied myself a student of science, I had another passion which ultimately decided the subsequent direction of my study: music.
 		
