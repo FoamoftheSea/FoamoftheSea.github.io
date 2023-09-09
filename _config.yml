@@ -26,6 +26,7 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.png
+author_bg: author_bg.png
 author: Nate Cibik
 author_bio: Hi, my name is Nate Cibik. I am a researcher of deep learning for autonomous navigation. This page is my research blog.
 author_email: "nate@hiddenlayers.tech"
@@ -33,6 +34,8 @@ author_location: USA
 author_website_url: "https://hiddenlayers.tech"
 typewrite-text: A place for accessible python and machine learning knowledge.
 hero_cover_img: hl_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+blog_bg: blog_bg.png
+gallery_bg: gallery_bg.png
 
 # Experiences
 author_work_experiences:
