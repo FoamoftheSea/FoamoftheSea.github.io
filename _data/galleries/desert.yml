@@ -1,0 +1,103 @@
+picture_path: desert
+preview:
+  filename: 1
+  original: 1.jpg
+  sizes:
+  - 1.jpg
+  thumbnail: 1-thumbnail.jpg
+pictures:
+- filename: 1
+  original: 1.jpg
+  sizes:
+  - 1.jpg
+  thumbnail: 1-thumbnail.jpg
+- filename: 2
+  original: 2.jpg
+  sizes:
+  - 2.jpg
+  thumbnail: 2-thumbnail.jpg
+- filename: 3
+  original: 3.jpg
+  sizes:
+  - 3.jpg
+  thumbnail: 3-thumbnail.jpg
+- filename: 4
+  original: 4.jpg
+  sizes:
+  - 4.jpg
+  thumbnail: 4-thumbnail.jpg
+- filename: 5
+  original: 5.jpg
+  sizes:
+  - 5.jpg
+  thumbnail: 5-thumbnail.jpg
+- filename: 6
+  original: 6.jpg
+  sizes:
+  - 6.jpg
+  thumbnail: 6-thumbnail.jpg
+- filename: 7
+  original: 7.jpg
+  sizes:
+  - 7.jpg
+  thumbnail: 7-thumbnail.jpg
+- filename: 8
+  original: 8.jpg
+  sizes:
+  - 8.jpg
+  thumbnail: 8-thumbnail.jpg
+- filename: 9
+  original: 9.jpg
+  sizes:
+  - 9.jpg
+  thumbnail: 9-thumbnail.jpg
+- filename: 10
+  original: 10.jpg
+  sizes:
+  - 10.jpg
+  thumbnail: 10-thumbnail.jpg
+- filename: 11
+  original: 11.jpg
+  sizes:
+  - 11.jpg
+  thumbnail: 11-thumbnail.jpg
+- filename: 12
+  original: 12.jpg
+  sizes:
+  - 12.jpg
+  thumbnail: 12-thumbnail.jpg
+- filename: 13
+  original: 13.jpg
+  sizes:
+  - 13.jpg
+  thumbnail: 13-thumbnail.jpg
+- filename: 14
+  original: 14.jpg
+  sizes:
+  - 14.jpg
+  thumbnail: 14-thumbnail.jpg
+- filename: 15
+  original: 15.jpg
+  sizes:
+  - 15.jpg
+  thumbnail: 15-thumbnail.jpg
+- filename: 16
+  original: 16.jpg
+  sizes:
+  - 16.jpg
+  thumbnail: 16-thumbnail.jpg
+- filename: 17
+  original: 17.jpg
+  sizes:
+  - 17.jpg
+  thumbnail: 17-thumbnail.jpg
+- filename: 18
+  original: 18.jpg
+  sizes:
+  - 18.jpg
+  thumbnail: 18-thumbnail.jpg
+- filename: 19
+  original: 19.jpg
+  sizes:
+  - 19.jpg
+  thumbnail: 19-thumbnail.jpg
