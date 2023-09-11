@@ -43,7 +43,7 @@ author_work_experiences:
               company_logo: pd_logo.png
               company_url: https://paralleldomain.com
               designation: Field Software Engineer
-              description: Worked on various Google Products
+              description: Contributed to and deployed a sophisticated synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain tailored to improve their model performance across various learning tasks, including semantic segmentation, object tracking/detection, depth estimation, visual odometry, optical/scene flow, and scene reconstruction.
               visibility: true
 
 # Education
@@ -92,8 +92,8 @@ wakatime_username: FoamoftheSea
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
-# getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: nate@hiddenlayers.tech
+getform_endpoint: 3e99791c-c805-4054-9d42-36416f0a8673
+# formspree_email: nate@hiddenlayers.com
 
 # releases - widget can be (sidebar, modal or embed)
 olvy_organization: devlopr
