@@ -101,3 +101,28 @@ pictures:
   sizes:
   - 19.jpg
   thumbnail: 19-thumbnail.jpg
+- filename: 20
+  original: 20.jpg
+  sizes:
+  - 20.jpg
+  thumbnail: 20-thumbnail.jpg
+- filename: 21
+  original: 21.jpg
+  sizes:
+  - 21.jpg
+  thumbnail: 21-thumbnail.jpg
+- filename: 22
+  original: 22.jpg
+  sizes:
+  - 22.jpg
+  thumbnail: 22-thumbnail.jpg
+- filename: 23
+  original: 23.jpg
+  sizes:
+  - 23.jpg
+  thumbnail: 23-thumbnail.jpg
+- filename: 24
+  original: 24.jpg
+  sizes:
+  - 24.jpg
+  thumbnail: 24-thumbnail.jpg
