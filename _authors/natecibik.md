@@ -3,7 +3,7 @@ name: Nate Cibik
 username: natecibik
 bio: "Hi I'm Nate, a Machine Learning Engineer and developer."
 site: http://foamofthesea.github.io
-avatar: profile.png
+avatar: nate.png
 email: nate.cibik@gmail.com
 social:
     - title: "github"
