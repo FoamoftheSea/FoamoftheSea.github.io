@@ -103,6 +103,7 @@ olvy_widget_type: sidebar
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+math_engine: katex
 
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
