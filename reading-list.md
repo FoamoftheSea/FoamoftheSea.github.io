@@ -4,6 +4,8 @@ layout: page
 permalink: /reading-list/
 ---
 
+<img class="card-img-top" src="/assets/img/library.jpg">
+
 # hiddenlayers.tech reading list
 <br>
 
