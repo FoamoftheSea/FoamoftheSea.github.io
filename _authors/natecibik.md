@@ -1,8 +1,8 @@
 ---
 name: Nate Cibik
 username: natecibik
-bio: "Hi I'm Nate, a Machine Learning Engineer and developer."
-site: http://foamofthesea.github.io
+bio: "Data scientist and ML engineer exploring the intersections of AI, archaeology, and the hidden layers between."
+site: https://hiddenlayers.tech
 avatar: nate.png
 email: nate@hiddenlayers.tech
 social:
@@ -12,20 +12,6 @@ social:
       url: "https://www.linkedin.com/in/natecibik"
     - title: "youtube"
       url: "https://www.youtube.com/channel/UC7aA9FbEDCJFwBHLNqY1K2w"
-#    - title: "facebook"
-#      url: "https://www.facebook.com/johndoe"
-#    - title: "twitter"
-#      url: "https://www.twitter.com/johndoe"
-#    - title: "behance"
-#      url: "https://behance.com/johndoe"
-#    - title: "instagram"
-#      url: "https://instagram.com/johndoe"
     - title: "medium"
-      url: "https://medium.com/natecibik"
-#    - title: "telegram"
-#      url: "https://telegram.com/johndoe"
-#    - title: "dribbble"
-#      url: "https://dribbble.com/johndoe"
-#    - title: "flickr"
-#      url: "https://flickr.com/johndoe"
+      url: "https://medium.com/@natecibik"
 ---
