@@ -162,7 +162,7 @@ plugins:
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-admin
+  # - jekyll-admin
 
 # Jekyll Admin Config
 jekyll_admin:
