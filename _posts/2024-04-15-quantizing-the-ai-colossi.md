@@ -187,7 +187,7 @@ As two early examples of these diverse approaches to CNN compression through qua
 
 In this section, we will watch the field of quantization come into focus during the era of CNN dominance unleashed by AlexNet. In this formative period of growth, we will see QAT, mixed-precision quantization, PTQ, and extreme quantization down to 1 or 2 bits become well-defined areas of research, setting the stage for our exploration into the maturation of these techniques in today’s era of large models.
 
-#### Quantization-Aware Training of CNNs
+#### Quantization-Aware Training of CNNs
 
 ![](https://cdn-images-1.medium.com/max/1200/1*vneHioeGHGvIqOhA4yI7dw.jpeg)
 *Image by author using DALL-E 3.*
@@ -253,7 +253,7 @@ A year later in late 2020, the HAWQ authors published a third iteration, [HAWQ-V
 
 The techniques covered in this section show the power of adjusting the layer-wise precision assignments based on sensitivity analysis, quantizing insensitive layers more aggressively, and allowing higher precision to preserve representation power in the sensitive layers. However, it is important to note that mixed-precision quantization schemes can be more challenging to implement on edge devices, where they may not operate as efficiently. Thus, it is reassuring to see strong fixed precision benchmarks in the HAWQ-V3 results above. In the next section, we will discuss techniques which seek to perform quantization on trained, full-precision CNNs without the need to retrain them, a highly relevant precursor to our upcoming discussion on the quantization of LLMs, where retraining and access to training data are often impossible.
 
-#### Post-Training Quantization of CNNs
+#### Post-Training Quantization of CNNs
 
 ![](https://cdn-images-1.medium.com/max/1200/1*mZIJ-x3r5zh0nqdJHIzEGw.jpeg)
 *Image by author using DALL-E 3.*
@@ -303,7 +303,7 @@ Only a couple months after AdaRound in mid-2020, [AdaQuant](https://arxiv.org/ab
 
 In this section, we’ve seen the rising focus on PTQ methods in the post-AlexNet era. While the primary motivators for PTQ during this period were typically concerns about edge deployment and data privacy, the work covered here provided an important foundation for the upcoming reliance on PTQ approaches that would arise with the exploding model sizes in the years to come. Before we part ways with the CNN era, there is one more research trend which was coming into fruition during this period that we need to cover, which was also motivated by the desire to operate at the edge: the extreme quantization of neural networks down to only 1 bit (binary networks) or 2 bits (ternary networks).
 
-#### Extreme Quantization: Binary and Ternary Networks
+#### Extreme Quantization: Binary and Ternary Networks
 
 ![](https://cdn-images-1.medium.com/max/1200/1*Lf67Cux1m1SYgLEx2--NmQ.jpeg)
 *Image by author using DALL-E 3.*
@@ -367,7 +367,7 @@ In this section, we’ve witnessed the explosion of interest in extreme neural n
 
 For now, we close our chapter on the CNN era, as now we have seen the formation of several distinct areas of quantization research flourish after the success of AlexNet brought massive influxes of talent and funding into the deep learning field. We’ve seen QAT approaches achieve impressive levels of compression without losing performance by fine-tuning the quantized weights, mixed-precision techniques achieve new levels of compression by incorporating sensitivity analysis into the quantization process, PTQ approaches closely match baseline performance in 8 or even 4 bits of precision with no retraining (and in the case of ZSQ, without using any calibration data), and finally, we saw the rise of extreme quantization research. Now, we shift our focus from the CNN era to the wave of research interest in NLP born from the success of the transformer architecture in 2017.
 
-### Quantization of LLMs
+### Quantization of LLMs
 
 ![](https://cdn-images-1.medium.com/max/1200/1*gnTrQvw1EZDt07nnfPQvVA.jpeg)
 *Image by author using DALL-E 3.*
@@ -395,7 +395,7 @@ In 2020, [BinaryBERT](https://arxiv.org/abs/2012.15701) sought to bring BERT qua
 ![](https://cdn-images-1.medium.com/max/800/1*USkR-uw82H9lVV-GyRueHw.png)
 *Results from [BinaryBERT](https://arxiv.org/abs/2012.15701) paper gives comprehensive view of BERT compression techniques and their relative sizes, and shows the impressive representation power maintained by their binarization method. Keep in mind that GOBO is a PTQ method which is a considerable handicap.*
 
-#### Post-Training Quantization (PTQ) of LLMs
+#### Post-Training Quantization (PTQ) of LLMs
 
 ![](https://cdn-images-1.medium.com/max/1200/1*yqacmlmqcne0YeRwpaHbmA.jpeg)
 
@@ -479,7 +479,7 @@ LUT-GEMM expands on the binary-coding quantization (BCQ) format used in XNOR-Net
 
 In this section, we have seen the legacy of PTQ come to fruition in the era of LLMs. These gargantuan models are extremely cost prohibitive to train, and thus necessitate the innovation of efficient one-shot or zero-shot quantization approaches like never before. Accordingly, researchers have provided extremely effective approaches to the open-source community, with bitsandbytes (LLM.int8), GPTQ, and AWQ becoming particularly popular, and the recently released HQQ offering a powerful new data-free alternative. In the implementation guide, we will weigh the comparative pros and cons for choosing between these quantization algorithms. But first, let’s complete our research journey by daring to explore the QAT of LLMs, since we know that QAT achieves superior quantization outcomes by its very nature, and perhaps we’ll be pleasantly surprised at how accessible some of these methods actually are.
 
-#### Quantization-Aware Training (QAT) of LLMs
+#### Quantization-Aware Training (QAT) of LLMs
 
 ![](https://cdn-images-1.medium.com/max/1200/1*-SqMisv6l28SsD5gXz68qw.jpeg)
 *Image by author using DALL-E 3.*
@@ -503,7 +503,7 @@ Famously in 2023, Tim Dettmers and his colleagues at University of Washington br
 ![](https://cdn-images-1.medium.com/max/800/1*jd4KfnXryR656YcaQxf_8g.png)
 *Table from [QLoRA](https://arxiv.org/abs/2305.14314) paper demonstrates that the performance lost due to quantization can be fully recovered by applying QLoRA fine-tuning on 4-bit quantized models.*
 
-#### Extreme Quantization of LLMs
+#### Extreme Quantization of LLMs
 
 Recently, the allure of extreme quantization has made its way into LLM research. As we saw earlier in the section on CNN quantization, neural networks can perform surprisingly well with binary or ternary weights with dramatically reduced memory traffic and computational complexity, as the weights occupy far fewer bits and the multiplication operations can be replaced with additions and subtractions. While extreme quantization of LLMs is a still a nascent field, recent work has demonstrated compelling results which will surely inspire the research community to develop this methodology into maturity. In this section, we will see the sparks of a dawning era of low-bit LLM training.
 
@@ -539,7 +539,7 @@ Meanwhile, [Georgi Gerganov](https://ggerganov.com/)’s Machine Learning librar
 ![](https://cdn-images-1.medium.com/max/800/1*pKKMAPURtH8mU-1OUwB8iA.png)
 *Results from MLC-LLM shows throughput of 4-bit CodeLlama-34B and Llama2–70B on two NVIDIA RTX 4090. We can see that any specialized inference engine offers substantial gains over using HF Transformers, but that for these NVIDIA cards, MLC-LLM outperforms the others consistently.*
 
-#### LLM Quantization Decision Tree
+#### LLM Quantization Decision Tree
 
 In this article, we have covered a lot of methodology which creates a dizzying list of design options for quantization. Fortunately, a handful of open-source inference engines have put the most useful of these tools at our fingertips in some intuitive form factors. This decision tree can be used as a very basic rule-of-thumb based on the intended use case and deployment environment, but is not an exhaustive list of considerations. It is intended to give practitioners a launching point for implementing quantization in their workflows.
 
