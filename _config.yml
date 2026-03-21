@@ -1,7 +1,7 @@
 title: hiddenlayers.tech
-subtitle: A blog about coding, machine learning, and robotics.
-description: >- # this means to ignore newlines until "baseurl:"
-  A place for accessible python and machine learning knowledge.
+subtitle: "Exploring AI, archaeology, and the layers between."
+description: >-
+  Hidden Layers is the personal site of Nate Cibik — a data scientist and ML engineer writing about AI/ML, archaeology, and the intersections between them.
 
 url: "https://hiddenlayers.tech" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,25 +28,27 @@ urls:
 author_logo: profile.png
 author_bg: author_bg.png
 author: Nate Cibik
-author_bio: Hi, my name is Nate Cibik. I am a researcher of deep learning for autonomous navigation. This page is my research blog.
+author_bio: "Hi, my name is Nate Cibik. I'm a data scientist and ML engineer exploring the intersections of AI, archaeology, and the hidden layers between."
 author_email: "nate@hiddenlayers.tech"
 author_location: USA
 author_website_url: "https://hiddenlayers.tech"
-typewrite-text: A place for accessible python and machine learning knowledge.
+typewrite-text: "Exploring AI, archaeology, and the layers between."
 hero_cover_img: hl_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 blog_bg: blog_bg.png
 gallery_bg: gallery_bg.png
 
 # Experiences
-author_work_experiences:
-            - company_name: Parallel Domain
-              company_logo: pd_logo.png
-              company_url: https://paralleldomain.com
-              designation: Field Software Engineer
-              description: Contributed to and deployed a sophisticated synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain tailored to improve their model performance across various learning tasks, including semantic segmentation, object tracking/detection, depth estimation, visual odometry, optical/scene flow, and scene reconstruction.
-              visibility: true
+# TODO: Update work experience — currently only shows Parallel Domain role
+# author_work_experiences:
+#             - company_name: Parallel Domain
+#               company_logo: pd_logo.png
+#               company_url: https://paralleldomain.com
+#               designation: Field Software Engineer
+#               description: Contributed to and deployed a sophisticated synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain tailored to improve their model performance across various learning tasks, including semantic segmentation, object tracking/detection, depth estimation, visual odometry, optical/scene flow, and scene reconstruction.
+#               visibility: true
 
 # Education
+# TODO: Verify education details are current/complete
 author_education_details:
               - college_logo: unca.jpg
                 college_name: UNCA
@@ -89,15 +91,16 @@ hyvor_talk_website_id: 9567
 wakatime_username: FoamoftheSea
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+# TODO: Replace with own Mailchimp or newsletter provider URL
+# mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 getform_endpoint: 3e99791c-c805-4054-9d42-36416f0a8673
 # formspree_email: nate@hiddenlayers.com
 
 # releases - widget can be (sidebar, modal or embed)
-olvy_organization: devlopr
-olvy_widget_type: sidebar
+# olvy_organization: devlopr
+# olvy_widget_type: sidebar
 
 # syntax highlighter
 markdown: kramdown
@@ -106,7 +109,7 @@ permalink: pretty
 math_engine: katex
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: true
+show_author_work_experiences: false
 show_author_education_details: true
 # how_author_project_details: true
 
