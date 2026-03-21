@@ -7,6 +7,11 @@ layout: compress
 {%- include head.html -%}
 <body>
         {%- include header.html -%}
+        {% if page.thumbnail and page.thumbnail != "/assets/img/posts/default.jpg" %}
+        <div class="post-hero">
+          <img src="{{ page.thumbnail }}" alt="{{ page.title }}" class="post-hero-img">
+        </div>
+        {% endif %}
         <div class="main-container">
             {{ content }}
         </div>
