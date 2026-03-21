@@ -270,6 +270,14 @@ header {
     margin: 15px;
 }
 
+.card-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+
 .author_bio{
     margin-top:5px;
 }
