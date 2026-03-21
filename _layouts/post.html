@@ -2,6 +2,18 @@
 layout: default
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".card-body a").forEach(function (link) {
+      var href = link.getAttribute("href");
+      if (href && href.startsWith("http") && !href.includes("hiddenlayers.tech")) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  });
+</script>
+
 <div class="row justify-content-center" id="blog-post-container">
   <div class="col-lg-10">
     {%- include blog_post_article.html -%}
