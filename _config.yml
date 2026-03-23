@@ -39,13 +39,19 @@ gallery_bg: gallery_bg.png
 
 # Experiences
 # TODO: Update work experience — currently only shows Parallel Domain role
-# author_work_experiences:
-#             - company_name: Parallel Domain
-#               company_logo: pd_logo.png
-#               company_url: https://paralleldomain.com
-#               designation: Field Software Engineer
-#               description: Contributed to and deployed a sophisticated synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain tailored to improve their model performance across various learning tasks, including semantic segmentation, object tracking/detection, depth estimation, visual odometry, optical/scene flow, and scene reconstruction.
-#               visibility: true
+author_work_experiences:
+            - company_name: Parallel Domain
+              company_logo: pd_logo.png
+              company_url: https://paralleldomain.com
+              designation: Field Software Engineer
+              description: Developed a synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain.
+              visibility: true
+            - company_name: Applied Intuition
+              company_logo: applied_logo.jpg
+              company_url: https://applied.co
+              designation: Perception ML Engineer
+              description: Developed multimodal, multitask perception models for the vehicle autonomy stack.
+              visibility: true
 
 # Education
 # TODO: Verify education details are current/complete
@@ -109,7 +115,7 @@ permalink: pretty
 math_engine: katex
 
 # Choose what to show ( can be true or false)
-show_author_work_experiences: false
+show_author_work_experiences: true
 show_author_education_details: true
 # how_author_project_details: true
 
