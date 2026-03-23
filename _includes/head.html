@@ -1,13 +1,13 @@
 <head>
   <meta charset="utf-8" />
   <title>
-    {% if {page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }} - {{
+    {% if page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }} - {{
     site.subtitle }}{% endif %}
   </title>
   <meta http-equip="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% if page.summary %}
-    <meta name="description" content="{{ page.summary | escape }}- {% if {page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{{ page.summary | escape }}- {% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
   {% endif %}
    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %},{{ page.keywords | escape }}"/>
 
@@ -49,9 +49,13 @@
   {% endfor %} {% endif %}
 
   <!-- Twitter Cards -->
+  {% if page.thumbnail %}
+  <meta name="twitter:card" content="summary_large_image" />
+  {% else %}
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.share.twitter_username }}" />
-  <meta name="twitter:creator" content="@{{ site.share.twitter_username }}" />
+  {% endif %}
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
 
   {% if page.title %}
   <meta name="twitter:title" content="{{ page.title }}" />
@@ -65,9 +69,9 @@
   <meta name="twitter:description" content="{{ page.summary }}" />
   {% else %}
   <meta name="twitter:description" content="{{ site.description }}" />
-  {% endif %} {% if page.header-img %}
+  {% endif %} {% if page.thumbnail %}
   <meta
-    name="twitter:image:src"
+    name="twitter:image"
     content="{{ site.url }}{{ page.thumbnail }}"
   />
   {% endif %}

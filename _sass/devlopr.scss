@@ -578,7 +578,11 @@ header {
 
 /* Share page buttons */
 .share-page {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
     background: var(--button-background-color);
     color: #111;
     padding: 8px 15px;
@@ -587,9 +591,15 @@ header {
 
     .share-text{
         color: var(--main-text-color);
+        margin-bottom: 0;
     }
 }
-.fb_iframe_widget span{vertical-align:inherit !important;}
+.share-page .fb_iframe_widget,
+.share-page .fb_iframe_widget span,
+.share-page .fb_iframe_widget iframe,
+.share-page iframe.twitter-share-button {
+    vertical-align: middle !important;
+}
 
 /* floating btn for buy me coffee */
 #bmc-wbtn{
