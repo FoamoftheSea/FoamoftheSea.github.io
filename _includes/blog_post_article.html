@@ -3,7 +3,7 @@
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <h4 class="post-meta">{{ page.summary }}</h4>
     <p class="post-summary">
-      Posted by : {% if page.author %}
+      Posted by: {% if page.author %}
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name"><a href="{{site.url}}{{site.baseurl}}/blog/authors/{{page.author}}">{{ page.author }}</a></span> </span
       >{% endif %} on
@@ -17,7 +17,7 @@
     ></span>
     <div class="post-categories">
       {% if post %} {% assign categories = post.categories %} {% else %} {%
-      assign categories = page.categories %} {% endif %} Category : {% for
+      assign categories = page.categories %} {% endif %} Category: {% for
       category in categories %}
       <a href="{{site.baseurl}}/blog/categories/{{category|slugify}}"
         >{{category}}</a
