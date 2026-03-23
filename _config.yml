@@ -25,7 +25,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: mr_clock.jpg
 author_bg: author_bg.png
 author: Nate Cibik
 author_bio: "Hi, my name is Nate Cibik. I'm a data scientist and ML engineer exploring the intersections of AI, archaeology, and the hidden layers between."
