@@ -21,7 +21,7 @@ Anyone who has used Claude Code for more than a few minutes has hit the permissi
 
 The obvious escape hatch is `--dangerously-skip-permissions`, a flag whose name tells you everything you need to know about Anthropic's opinion on the matter. There's also `bypassPermissions` mode with allow/deny lists, which is better, but still requires you to trust that a sufficiently creative agent won't find a way around your rules using `python -c` or `bash -c`. And if the agent is talking to the internet — downloading packages, hitting APIs, running code it just wrote — you've introduced an attack surface that no permission list can fully address.
 
-So we have a real tension: the more autonomous you want an AI agent to be, the more surface area you expose. And the use cases that benefit most from autonomy — AutoResearch loops, data processing pipelines, literature research, automated testing — are exactly the ones where you *can't* be watching.
+So we have a real tension: the more autonomous you want an AI agent to be, the more surface area you expose. And the use cases that benefit most from autonomy (AutoResearch loops, data processing pipelines, literature research, automated testing) are exactly the ones where you *can't* be watching.
 
 This post describes a defense-in-depth approach to solving this problem with a portable, hardened Docker sandbox that I built for running Claude Code agents with both meaningful freedom and meaningful security. The code is available on [GitHub](https://github.com/FoamoftheSea/claude-code-sandbox).
 
