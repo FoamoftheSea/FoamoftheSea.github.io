@@ -38,19 +38,30 @@ blog_bg: blog_bg.png
 gallery_bg: gallery_bg.png
 
 # Experiences
-# TODO: Update work experience — currently only shows Parallel Domain role
 author_work_experiences:
-            - company_name: Parallel Domain
-              company_logo: pd_logo.png
-              company_url: https://paralleldomain.com
-              designation: Field Software Engineer
-              description: Developed a synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain.
+            - company_name: CHAOS Industries
+              company_logo: chaos_logo.png
+              company_url: https://www.chaosinc.com
+              designation: Staff Perception Engineer
+              description: Building perception systems used in CHAOS products, including ATC Talker.
+              visibility: true
+            - company_name: Atropos Group, Inc
+              company_logo: atropos_logo.png
+              company_url: https://www.atroposgroup.com
+              designation: Senior Perception ML Engineer
+              description: Led the ATC Talker project, which developed a language module for autonomous communication with Air Traffic Control.
               visibility: true
             - company_name: Applied Intuition
               company_logo: applied_logo.jpg
               company_url: https://applied.co
               designation: Perception ML Engineer
               description: Developed multimodal, multitask perception models for the vehicle autonomy stack.
+              visibility: true
+            - company_name: Parallel Domain
+              company_logo: pd_logo.png
+              company_url: https://paralleldomain.com
+              designation: Field ML Engineer
+              description: Developed a synthetic data pipeline to serve training datasets to customers in the Autonomous Vehicle domain.
               visibility: true
 
 # Education
