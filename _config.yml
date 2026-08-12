@@ -1,7 +1,7 @@
 title: hiddenlayers.tech
-subtitle: "Exploring AI, archaeology, and the layers between."
+subtitle: "Exploring AI, archaeology, music, and the layers between."
 description: >-
-  Hidden Layers is the personal site of Nate Cibik — a data scientist and ML engineer writing about AI/ML, archaeology, and the intersections between them.
+  Hidden Layers is the personal site of Nate Cibik — a data scientist and ML engineer writing about AI/ML, archaeology, music, and the intersections between them.
 
 url: "https://hiddenlayers.tech" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,7 +28,7 @@ urls:
 author_logo: mr_clock.jpg
 author_bg: author_bg.png
 author: Nate Cibik
-author_bio: "Hi, my name is Nate Cibik. I'm a data scientist and ML engineer exploring the intersections of AI, archaeology, and the hidden layers between."
+author_bio: "Hi, my name is Nate Cibik. I'm a data scientist and ML engineer exploring the intersections of AI, archaeology, music, and the hidden layers between."
 author_email: "nate@hiddenlayers.tech"
 author_location: USA
 author_website_url: "https://hiddenlayers.tech"
