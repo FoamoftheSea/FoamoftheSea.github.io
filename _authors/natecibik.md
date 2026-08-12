@@ -1,7 +1,7 @@
 ---
 name: Nate Cibik
 username: natecibik
-bio: "Data scientist and ML engineer exploring the intersections of AI, archaeology, and the hidden layers between."
+bio: "Data scientist and ML engineer exploring the intersections of AI, archaeology, music, and the hidden layers between."
 site: https://hiddenlayers.tech
 avatar: nate.jpg
 email: nate@hiddenlayers.tech
